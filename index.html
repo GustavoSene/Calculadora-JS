@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/calculator.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div id="containerbig">
+        <div id="container">
+            <input type="text" inputmode="numeric" id="maininput">
+            <button id="plus" onclick="num('+')" onmouseover="luzinha('+')" onmouseleave="luz2('+')" class="simbolos">+</button>
+            <button id="less"  onclick="num('-')" onmouseover="luzinha('-')" onmouseleave="luz2('-')" class="simbolos">-</button>
+            <button id="bar" onclick="num('/')" onmouseover="luzinha('/')" onmouseleave="luz2('/')" class="simbolos">÷</button>
+            <button id="multi" onclick="num('*')" onmouseover="luzinha('*')" onmouseleave="luz2('*')" class="simbolos">×</button>
+            <div id="boxnumber">
+                <button id="um" onclick="num(1)" onmouseover="luzinha(1)" onmouseleave="luz2(1)" class="numeros">1</button>
+                <button id="dois" onmouseover="luzinha(2)" onmouseleave="luz2(2)" onclick="num(2)" class="numeros">2</button>
+                <button id="tres" onclick="num(3)" onmouseover="luzinha(3)" onmouseleave="luz2(3)"  class="numeros">3</button>
+                <button id="quatro" onclick="num(4)" onmouseover="luzinha(4)" onmouseleave="luz2(4)" class="numeros2">4</button>
+                <button id="cinco" onclick="num(5)" onmouseover="luzinha(5)" onmouseleave="luz2(5)" class="numeros2">5</button>
+                <button id="seis" onclick="num(6)" onmouseover="luzinha(6)" onmouseleave="luz2(6)" class="numeros2">6</button>
+                <button id="sete" onclick="num(7)" onmouseover="luzinha(7)" onmouseleave="luz2(7)" class="numeros3">7</button>
+                <button id="oito" onclick="num(8)" onmouseover="luzinha(8)" onmouseleave="luz2(8)" class="numeros3">8</button>
+                <button id="nove"  onclick="num(9)" onmouseover="luzinha(9)" onmouseleave="luz2(9)"class="numeros3">9</button>
+            </div>
+            <button id="clear" onclick="limpar()" onmouseover="luzinha('c')" onmouseleave="luz2('c')" class="numeros">C</button>
+            <button id="result" onclick="calc()" onmouseover="luzinha('=')" onmouseleave="luz2('=')" class="numeros">=</button>
+            <button id="zero" onclick="num(0)" onmouseover="luzinha(0)" onmouseleave="luz2(0)" class="numeros">0</button>
+        
+        </div>
+    </div>
+
+
+
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
